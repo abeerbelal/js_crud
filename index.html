@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>js demo</title>
+    <!-- font awesome 6 -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- bootstrap 5 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container m-auto w-50 my-5">
+
+     
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Course name </label>
+        <input id="courseName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Course Categori</label>
+        <input id="courseCat" type="text" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Course price</label>
+        <input id="coursePrice" type="number" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Course Description</label>
+        <textarea id="courseDesc" class="form-control" id="exampleInputPassword1"></textarea>
+      </div>
+     
+      <button type="button" id="click" class="btn btn-outline-secoundary">Add course</button>
+      <button type="button" class="btn btn-outline-primary">clear course </button>
+      <div class="div d-block mt-5 mb-3">
+        <button type="button" id="del-btn" class="btn btn-outline-danger">delet all course </button>
+ 
+      </div>
+      <input type="search" onkeyup="search(this.value)" placeholder="search..." class="form-control"/>
+
+
+
+    <table class="table table-striped mt-5">
+      <thead>
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">name</th>
+          <th scope="col">categori</th>
+          <th scope="col">price</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody id="data">
+  
+      </tbody>
+    </table>
+  </div>
+    <!-- bootstrap 5 -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/js.js"></script>
+
+  </body>
+</html>
